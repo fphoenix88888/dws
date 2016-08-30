@@ -20,9 +20,14 @@ jQuery(document).ready(function() {
 	    Slider 2
 	*/
 	$('.slider-2-container').backstretch([
-	  "assets/img/slider/5.jpg"
-	, "assets/img/slider/6.jpg"
-	, "assets/img/slider/7.jpg"
+	  "assets/img/slider/1.png"
+	, "assets/img/slider/2.png"
+	, "assets/img/slider/3.png"
+	, "assets/img/slider/4.png"
+	, "assets/img/slider/5.png"
+	, "assets/img/slider/6.png"
+	, "assets/img/slider/7.png"
+	, "assets/img/slider/8.png"
 	], {duration: 3000, fade: 750});
 	
 	/*
