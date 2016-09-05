@@ -221,4 +221,10 @@ jQuery(window).load(function() {
 	*/
 	$(".testimonial-image img, .portfolio-box img").attr("style", "width: auto !important; height: auto !important;");
 	
+	/*
+		Tooltip
+	*/
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+	});
 });
