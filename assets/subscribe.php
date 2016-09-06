@@ -30,8 +30,9 @@ if($_POST) {
 	    $subject = '筑夢翼創意工作室－有新的訂閱者';
 	    $body = "管理者您好：\n\n本新訂閱者通知郵件是由您所建立的網站所自動傳送。\n以下為訂閱者資料：\n\nEmail: " . $subscriber_email;
         // uncomment this to set the From and Reply-To emails, then pass the $headers variable to the "mail" function below
+        $headers = "Content-Type: text/html; charset=UTF-8";
 	    //$headers = "From: ".$subscriber_email." <" . $subscriber_email . ">" . "\r\n" . "Reply-To: " . $subscriber_email;
-	    mail($emailTo, $subject, $body);
+	    mail($emailTo, $subject, $body, $headers);
     }
 
 }
