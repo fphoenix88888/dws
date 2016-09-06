@@ -143,7 +143,7 @@ jQuery(document).ready(function() {
                 }
                 if(json.nameMessage == '' && json.emailMessage == '' && json.messageMessage == '') {
                 	form.fadeOut('fast', function() {
-                		form.parent('.contact-form').append('<p><span class="violet">Thanks for contacting us!</span> We will get back to you very soon.</p>');
+                		form.parent('.contact-form').append('<p><span class="violet">感謝您的意見回饋。</span>我們會盡快與您聯絡。</p>');
                     });
                 }
             }
