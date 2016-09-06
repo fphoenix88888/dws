@@ -31,7 +31,7 @@ if($_POST) {
     }
     if($clientName != '' && isEmail($clientEmail) && $message != '') {
         // Send email
-	$headers = "From: " . $clientName . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
+	$headers = "Content-Type: text/html; charset=UTF-8" . "From: " . $clientName . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
 	mail($emailTo, $subject . ' (筑夢翼創意工作室)', $message, $headers);
     }
 
